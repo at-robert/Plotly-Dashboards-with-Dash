@@ -22,19 +22,20 @@ app.layout = html.Div([
         min=0,
         max=10,
         step=1,
-        value=5
+        value=5,
     ),
-    html.Hr(),  # add a horizontal rule
+    html.Div(style={'paddingTop':35}),
     dcc.Slider(
         id='my-slider1',
         marks={i: '{}'.format(i) for i in range(-10,0)},
         min=-10,
         max=0,
         step=1,
-        value=-5
+        value=-5,
     ),
-    html.Hr(),  # add a horizontal rule
-    html.Div(id='slider-output-container')
+    # html.Hr(),  # add a horizontal rule
+    html.Div(style={'paddingTop':35}),
+    html.Div(id='slider-output-container', style={'paddingTop':35})
 ])
 
 
